@@ -14,7 +14,7 @@ const username = process.env.USERSNAME;
 const password = process.env.PASSWD;
 const dbname = process.env.DBNAME;
 
-const DB = `mongodb+srv://${username}:${password}@cluster0.rurv5.mongodb.net/${dbname}?retryWrites=true&w=majority`;
+const DB = `mongodb+srv://${username}:${password}@cluster0.dcg6ptc.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 mongoose
   .connect(DB)
   .then((res) => {
