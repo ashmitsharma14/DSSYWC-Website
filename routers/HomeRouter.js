@@ -11,11 +11,15 @@ Router.get("/", async (err, res) => {
     const count = users[0].count;
     if (err) return;
     else {
-      res.render("index", {
         start: hasStarted,
-        Count: count,
+
         TN: TicketsNow,
         ES: EndingSoon,
+        Passes: EventPasses.PASSES,
+        IP: users[0].IP,
+        NIP: users[0].NIP,
+        IPA: users[0].IPA,
+        NIPA:users[0].NIPA,
       });
     }
   });
