@@ -5,7 +5,19 @@ const userSchema = new Schema({
     type: Boolean,
     required: true,
   },
-  count: {
+  IP: {
+    type: Number,
+    required: true,
+  },
+  NIP: {
+    type: Number,
+    required: true,
+  },
+  IPA: {
+    type: Number,
+    required: true,
+  },
+  NIPA: {
     type: Number,
     required: true,
   },
